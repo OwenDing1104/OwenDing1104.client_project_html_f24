@@ -17,8 +17,14 @@ h3 {
     font-size: 120%
 }
 
+h4 {
+    text-align: left;
+    align-items: left;
+    font-size: 80%;
+}
+
 a {
-    color: #1e90ff;
+    color: #FFCB05;
 }
 
 a:hover{
@@ -30,14 +36,16 @@ a:active{
 }
 
 header nav ul{
+    border: 3px #FFCB05 solid;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: 10px;
     padding: 10px;
     display: flex;
-    gap: 50px;
-    border: 3px #FFCB05 solid;
+    gap: 40px;
+    overflow: auto;
+
 }
 
 section {
@@ -45,13 +53,24 @@ section {
 	background-color: #FFCB05;
 	grid-template-columns: auto;
 	grid-gap: 10px;
-	padding: 10px;
+    padding: 12px;
     margin: 10px;
 	border: 3px #000000 solid;
 	border-radius: 25px;
 	font-size: 16px;
     color:#000000;
     overflow: auto;
+}
+
+section img{
+    border: 3px #00274C solid;
+    border-radius: 25 px;
+    width: 100%;
+    text-align: center;
+}
+
+section a{
+    background-color:#00274C;
 }
 
 #umsi-logo{
@@ -65,10 +84,6 @@ section {
 
 #section2 {
     text-align: left;
-}
-
-body img{
-    width: 100%;
 }
 
 #section3 {
