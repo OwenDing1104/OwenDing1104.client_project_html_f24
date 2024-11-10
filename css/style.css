@@ -108,6 +108,19 @@ main {
     }
 }
 
+body.error-page main {
+    display: flex;
+    align-items: center;       /* Centers vertically */
+    justify-content: center;   /* Centers horizontally */
+}
+
+body.error-page main section {
+    width: 100%;
+    max-width: 600px;  /* Adjust as needed */
+    text-align: center;
+}
+
+
 section {
     background-color: #FFCB05;
     padding: 12px;
