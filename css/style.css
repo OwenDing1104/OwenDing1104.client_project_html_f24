@@ -63,7 +63,7 @@ header nav ul {
     justify-content: center;
     align-items: center;
     width: auto;
-    gap: 3%;
+    gap: 4.5%;
     margin: 10px;
     padding: 10px;
     border: 3px #FFCB05 solid;
@@ -71,7 +71,7 @@ header nav ul {
 }
 
 nav ul li {
-    list-style: none;
+    list-style:circle;
 }
 
 nav ul li a {
