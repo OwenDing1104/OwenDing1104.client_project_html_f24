@@ -63,7 +63,7 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 10%;
     margin: 10px;
     padding: 10px;
     border: 3px #FFCB05 solid;
@@ -71,12 +71,12 @@ header nav ul {
 }
 
 nav ul li {
-    list-style: none;
+    list-style:decimal;
 }
 
 nav ul li a {
     color: #FFCB05;
-    text-decoration: none;
+    text-decoration: 3px dashed;
     padding: 10px 15px;
     transition: color 0.3s, background-color 0.3s;
 }
