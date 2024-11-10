@@ -2,7 +2,29 @@ body{
     background-color: #00274C;
     color: #ffffff;
 }
+/* skip link invisiable and visible when needed */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFCB05;
+    color: #00274C;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+/* Redesign the header */
 h1, h2{
     text-align: center;
     align-items: center;
@@ -23,18 +45,20 @@ h4 {
     font-size: 80%;
 }
 
+/* basic link style */
 a {
     color: #FFCB05;
 }
 
-a:hover{
-    color:#FFCB05;
+a:hover {
+    color:#FFD700;
 }
 
-a:active{
+a:active {
     color: #ff6347;
 }
 
+/* redesign header link*/
 header nav ul{
     border: 3px #FFCB05 solid;
     text-align: center;
@@ -45,7 +69,26 @@ header nav ul{
     display: flex;
     gap: 40px;
     overflow: auto;
+}
 
+nav ul li a.active {
+    color: #00274C;
+    background-color: #FFCB05;
+    font-weight: bold;
+}
+
+
+nav ul li a {
+    color: #FFCB05;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700;
+    color: #00274C;
+    border-radius: 5px;
 }
 
 section {
@@ -62,24 +105,28 @@ section {
     overflow: auto;
 }
 
-section img{
+section img {
     border: 3px #00274C solid;
-    border-radius: 25 px;
+    border-radius: 25px;
     width: 100%;
-    text-align: center;
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centers the image */
 }
 
 section a{
     background-color:#00274C;
 }
 
-#umsi-logo{
-    width: 90%;
+/* Ensure the logo has consistent border-radius */
+#umsi-logo {
+    height: 10%;
+    width: 10%;
     display: block;
     padding: 10px;
-    margin: 10px;
+    margin: 0px auto; /* Center the logo */
     border: 3px #FFCB05 solid;
-    border-bottom-right-radius: 25px;
+    border-radius: 25px; /* Corrected to apply to all corners */
 }
 
 #section2 {
@@ -92,4 +139,12 @@ section a{
 
 #section4 {
     text-align: left;
+}
+
+/* Redesign the footer */
+footer {
+    background-color: #00274C;
+    color: #FFCB05;
+    text-align: right;
+    width: 100%;
 }

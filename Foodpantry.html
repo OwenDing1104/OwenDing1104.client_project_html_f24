@@ -8,14 +8,15 @@
     <title>FoodPantry</title>
 </head>
 <body>
-    <a href = "#main">Skip to Main Content</a>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
     <header>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" id="umsi-logo">
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "Caps.html">CAPS</a></li>
                 <li><a href = "CEW.html">CEW</a></li>
-                <li><a href = "Foodpantry.html">FoodPantry</a></li>
+                <li><a href = "Foodpantry.html" class="active">FoodPantry</a></li>
             </ul>
         </nav>
         <h1>WELCOME TO MAIZE & BLUE CUPBOARD</h1>
@@ -27,14 +28,8 @@
             <img src="images/MCOMMONS-CampusFarmStandOpening-01.jpg" alt="a man go to a campus farm store">
             <p>To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others </p>
         </div>
-
-        <div>
-            <h2>MAKE AN APPOINTMENT RIGHT NOW</h2>
-            <img src="images/MCOMMONS-DSC03396.jpg" alt="students are select vegetales">
-            <p>Shopping at the Maize and Blue Cupboard is by appointment only.  Please make an appointment by visiting our sign up page here </p>
-        </div>
         </section>
-
+        
         <section id="section2">
             <h2>WHO WE ARE</h2>
             <p>College students and staff are experiencing food insecurity at alarming rates. The Maize and Blue Cupboard is here to provide an immediate and comprehensive response for the U-M community. By offering resources, educational opportunities, compassionate support and more, we help students develop the skills to make informed decisions.</p>
@@ -66,11 +61,86 @@
             <p>U-M’s Maize & Blue Cupboard (MBC), the College of Engineering, Student Life, and Ann Arbor-based Food Gatherers will host North Campus mobile food distributions to make MBC resources more accessible for North Campus residents.</p>
         </section>
 
+        <section id="section5">
+        <div>
+            <h2>MAKE AN APPOINTMENT RIGHT NOW</h2>
+            <img src="images/MCOMMONS-DSC03396.jpg" alt="students are select vegetales">
+            <p>Shopping at the Maize and Blue Cupboard is by appointment only.  Please make an appointment by visiting our sign up page here </p>
+        </div>
+            <form
+            action="https://formspree.io/f/xgveakpd"
+            method="POST"
+            >
+                <fieldset>
+                    <legend>Farm Pick Up Form</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name"  required>
+        
+                    <label for="last-name">Last Name:</label>
+                    <input type="text"  id="last-name" name="last-name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <fieldset>
+                        <legend>Current class standing:</legend>
+                        <div>
+                          <br> 
+                          <label>
+                            <input type="radio" name ="standing" value = "1" id="freshman"> Freshman
+                          </label><br>
+                          <label>
+                            <input type="radio" name ="standing" value = "2" id="soph"> Sophomore
+                          </label><br>
+                          <label>
+                            <input type="radio" name ="standing" value = "3" id="junior"> Junior
+                          </label><br>
+                          <label>
+                            <input type="radio" name ="standing" value = "4" id="senior"> Senior
+                          </label><br>
+                          <label>
+                            <input type="radio" name ="standing" value = "5" id="grad"> Graduate
+                          </label><br>
+                          <label>
+                            <input type="radio" name ="standing" value = "6" id="other"> Other
+                          </label><br>
+                      </div>
+                  </fieldset>
+
+                    <label for="msg">Leave your special request!</label>
+                    <textarea placeholder="Please leave your special request" id="msg" name="msg">
+                    </textarea>
+        
+                    <div class="radio-group">
+                        <p>Available Time for Picking Up Grocery:</p>
+                        <input type="radio" id="morning" name="available-time" value="morning">
+                        <label for="morning">Morning</label>
+        
+                        <input type="radio" id="afternoon" name="available-time" value="afternoon">
+                        <label for="afternoon">Afternoon</label>
+        
+                        <input type="radio" id="evening" name="available-time" value="evening">
+                        <label for="evening">Evening</label>
+        
+                        <input type="radio" id="weekend" name="available-time" value="weekend">
+                        <label for="weekend">Weekend</label>
+                    </div>
+        
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+
+
+
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
-    
 </body>
 
 </html>

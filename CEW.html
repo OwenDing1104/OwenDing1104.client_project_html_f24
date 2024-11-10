@@ -8,13 +8,14 @@
     <title>CEW</title>
 </head>
 <body>
-    <a href = "#main">Skip to Main Content</a>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
     <header>
         <nav>
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" id="umsi-logo">
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "Caps.html">CAPS</a></li>
-                <li><a href = "CEW.html">CEW</a></li>
+                <li><a href = "CEW.html" class="active">CEW</a></li>
                 <li><a href = "Foodpantry.html">FoodPantry</a></li>
             </ul>
         </nav>
@@ -70,6 +71,10 @@
     
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
     
 </body>
